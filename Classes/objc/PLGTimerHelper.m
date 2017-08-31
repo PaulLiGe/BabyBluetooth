@@ -1,9 +1,9 @@
 //
 //  PLGTimerHelper.m
-//  BabyBluetoothOSDemo
+//  BluetoothDemo
 //
 //  Created by PaulLi on 2017/8/28.
-//  Copyright © 2017年 liuyanwei. All rights reserved.
+//  Copyright © 2017年 PaulLi. All rights reserved.
 //
 
 #import "PLGTimerHelper.h"

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		79CD9BD51CDB7457009DAD1C /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CD9BD41CDB7457009DAD1C /* BabyDefine.m */; };
 		7A5F44641F540D2700B78A4E /* PLGTimerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F44631F540D2700B78A4E /* PLGTimerHelper.m */; };
+		7ADDF2EA1F57BCC9001A6EF1 /* BabyBluetooth+YDBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADDF2E91F57BCC9001A6EF1 /* BabyBluetooth+YDBCategory.m */; };
 		E16F24AE1C21298200A5C274 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F24AD1C21298200A5C274 /* BabyCentralManager.m */; };
 		E1E08ADE1C1F0A77007356D3 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E08ADD1C1F0A77007356D3 /* BabyPeripheralManager.m */; };
 		F0E079311BB92B1F0092509E /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E0792E1BB92B1F0092509E /* BabyOptions.m */; };
@@ -40,6 +41,8 @@
 		79CD9BD41CDB7457009DAD1C /* BabyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyDefine.m; sourceTree = "<group>"; };
 		7A5F44621F540D2700B78A4E /* PLGTimerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLGTimerHelper.h; sourceTree = "<group>"; };
 		7A5F44631F540D2700B78A4E /* PLGTimerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLGTimerHelper.m; sourceTree = "<group>"; };
+		7ADDF2E81F57BCC8001A6EF1 /* BabyBluetooth+YDBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth+YDBCategory.h"; sourceTree = "<group>"; };
+		7ADDF2E91F57BCC9001A6EF1 /* BabyBluetooth+YDBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth+YDBCategory.m"; sourceTree = "<group>"; };
 		E16F24AC1C21298200A5C274 /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
 		E16F24AD1C21298200A5C274 /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
 		E1E08ADC1C1F0A77007356D3 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				F0F534C71B9C104100285A3C /* BabyToy.m */,
 				7A5F44621F540D2700B78A4E /* PLGTimerHelper.h */,
 				7A5F44631F540D2700B78A4E /* PLGTimerHelper.m */,
+				7ADDF2E81F57BCC8001A6EF1 /* BabyBluetooth+YDBCategory.h */,
+				7ADDF2E91F57BCC9001A6EF1 /* BabyBluetooth+YDBCategory.m */,
 			);
 			name = BabyBluetooth;
 			path = ../../../Classes/objc;
@@ -280,6 +285,7 @@
 				F0E079321BB92B1F0092509E /* BabyRhythm.m in Sources */,
 				F0F534A01B9C0FBE00285A3C /* main.m in Sources */,
 				F0F534C81B9C104100285A3C /* BabyBluetooth.m in Sources */,
+				7ADDF2EA1F57BCC9001A6EF1 /* BabyBluetooth+YDBCategory.m in Sources */,
 				F0F534CB1B9C104100285A3C /* BabySpeaker.m in Sources */,
 				F0F534C91B9C104100285A3C /* BabyCallback.m in Sources */,
 				F0F5349E1B9C0FBE00285A3C /* AppDelegate.m in Sources */,

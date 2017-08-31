@@ -19,7 +19,8 @@
 #import "BabySpeaker.h"
 #import "BabyRhythm.h"
 #import "BabyDefine.h"
-
+#import "BabyBluetooth+YDBCategory.h"
+#import "PLGTimerHelper.h"
 
 @interface BabyBluetooth : NSObject
 
