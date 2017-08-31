@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
   s.source       = { :git => "https://github.com/PaulLiGe/BabyBluetooth.git", :tag => s.version }
-
+  s.author          = { 'PaulLiGe' => 'paullige@foxmail.com' }
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
