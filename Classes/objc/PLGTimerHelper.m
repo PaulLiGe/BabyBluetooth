@@ -39,13 +39,6 @@
     self.callback = nil;
 }
 
-- (void)timerActionMethod {
-    if (self.callback) {
-        [self.timer setFireDate:[NSDate distantFuture]];
-        self.callback();
-    }
-}
-
 #pragma mark - private methods
 
 - (void)configTimer {
@@ -53,10 +46,16 @@
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
+- (void)timerActionMethod {
+    if (self.callback) {
+        [self.timer setFireDate:[NSDate distantFuture]];
+        self.callback();
+    }
+}
+
 - (void)dealloc {
     [self.timer invalidate];
     self.timer = nil;
 }
-
 
 @end

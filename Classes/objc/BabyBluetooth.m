@@ -9,7 +9,7 @@
 
 
 #import "BabyBluetooth.h"
-
+#import <objc/runtime.h>
 
 
 @implementation BabyBluetooth{
@@ -668,4 +668,42 @@ characteristic:(CBCharacteristic *)characteristic
 
 @end
 
+///------------------------------------------
+///      BabyBluetooth+PLGCategory
+///------------------------------------------
+
+static void *writeCharacterKey = &writeCharacterKey;
+static void *peripheralKey = &peripheralKey;
+
+@implementation BabyBluetooth (PLGCategory)
+
+#pragma mark - public methods
+
+- (void)writeData:(NSData *)data {
+    if (self.writeCharacteristic.properties & CBCharacteristicPropertyWriteWithoutResponse) {
+        [self.peripheral writeValue:data forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithoutResponse];
+    } else if (self.writeCharacteristic.properties & CBCharacteristicPropertyWrite) {
+        [self.peripheral writeValue:data forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithResponse];
+    }
+}
+
+#pragma mark - setters and getters
+
+- (void)setWriteCharacteristic:(CBCharacteristic *)writeCharacteristic {
+    objc_setAssociatedObject(self, &writeCharacterKey, writeCharacteristic, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (CBCharacteristic *)writeCharacteristic {
+    return objc_getAssociatedObject(self, &writeCharacterKey);
+}
+
+- (void)setPeripheral:(CBPeripheral *)peripheral {
+    objc_setAssociatedObject(self, &peripheralKey, peripheral, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (CBPeripheral *)peripheral {
+    return objc_getAssociatedObject(self, &peripheralKey);
+}
+
+@end
 

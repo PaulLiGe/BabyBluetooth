@@ -552,4 +552,19 @@ characteristic:(CBCharacteristic *)characteristic
 
 @end
 
+///------------------------------------------
+///      BabyBluetooth+PLGCategory
+///------------------------------------------
+
+@interface BabyBluetooth (PLGCategory)
+
+@property (nonatomic, weak) CBCharacteristic *writeCharacteristic;
+
+@property (nonatomic, weak) CBPeripheral *peripheral;
+
+- (void)writeData:(NSData *)data;
+
+@end
+
+
 
