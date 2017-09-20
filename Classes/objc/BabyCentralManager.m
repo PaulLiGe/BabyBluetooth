@@ -70,7 +70,9 @@
 
 //断开设备连接
 - (void)cancelPeripheralConnection:(CBPeripheral *)peripheral {
-    [centralManager cancelPeripheralConnection:peripheral];
+    if (peripheral) {
+        [centralManager cancelPeripheralConnection:peripheral];
+    }
 }
 
 //断开所有已连接的设备
